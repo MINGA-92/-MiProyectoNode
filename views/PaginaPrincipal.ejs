@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="es">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+<body style="background-color: #092D4D">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark static-top mb-5 shadow" style="text-decoration: #ffff">
+        <div class="container">
+        <a class="navbar-brand text-white" href="#"><h2>👽👻😉☠ ™ </h2></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ms-auto">
+            <li class="nav-item active">
+                <a class="nav-link text-white" href="/">🏠 Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="/ListadoUsuarios">Usuario Registrados</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="/Create">Registro De Usuario</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="#">¡Peguelo! <i class='fas fa-cannabis' style='color:green'></i></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="/Logout"> Cerrar Sesion</a>
+            </li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+
+    <% if(login == true){ %>
+        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12" style="margin-top: 2%">  
+        <section class="pricing py-7">
+          <MARQUEE ScrollAmount="11">
+              <h2 href="/" style="color: #d1d3d4;">
+                <!-- <img src="/Img.PNG" alt="" height="28" width="68">  -->
+                  ¡BIENVENIDO <%= name %> 👨‍💻™  !
+              </h2>
+          </MARQUEE>
+        </section>
+      </div>
+    <% }else{  %>
+        <div class="container" style="margin-top: 2%">  
+            <section class="pricing py-7">
+                <h2 style="color: #d1d3d4;">
+                     <%= name %> 👨‍💻™  
+                </h2>
+                <a href="/Logout">Login</a>
+            </section>
+        </div>
+    <%  } %>
+    <section class="pricing py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Insertar Video De Youtube-->
+                <iframe width="550" height="420" src="https://www.youtube.com/embed/41955yR5AKk" title="YouTube video player" frameborder="28" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <!--Traer Imagen Randon De Internet -->
+                <img src="https://source.unsplash.com/random">
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.4.4/sweetalert2.all.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.5/js/dataTables.bootstrap5.min.js"></script>
+
+</body>
+</html>
